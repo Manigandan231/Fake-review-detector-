@@ -6,7 +6,7 @@ from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 # Download stopwords (first time only)
-nltk.download('stopwords')
+nltk.download('stopwords') 
 
 # Load dataset
 data = pd.read_csv(r"C:\Users\Manikandansaravanan\OneDrive\Documents\Fake-review-detector--main\data\fake_reviews_dataset.csv")
