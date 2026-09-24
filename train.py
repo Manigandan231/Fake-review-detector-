@@ -14,7 +14,7 @@ data = pd.read_csv(r"C:\Users\Manikandansaravanan\OneDrive\Documents\Fake-review
 # Select columns
 texts = data['text']
 labels = data['label']
-
+ 
 # Text cleaning function
 def clean_text(text):
     text = text.lower()
