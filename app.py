@@ -7,7 +7,7 @@ import re
 
 # Load trained model and TF-IDF vectorizer
 model = joblib.load("model/fake_review_model.pkl")
-vectorizer = joblib.load("model/vectorizer.pkl")
+vectorizer = joblib.load("model/vectorizer.pkl") 
 
 
 # ==========================================
