@@ -45,7 +45,7 @@ from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import MultinomialNB
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
 
 # Download stopwords
 nltk.download('stopwords')
@@ -86,10 +86,22 @@ model.fit(X_train, y_train)
 
 # Predict & evaluate
 y_pred = model.predict(X_test)
+
+# Evaluation metrics
 accuracy = accuracy_score(y_test, y_pred)
+precision = precision_score(y_test, y_pred, zero_division=0)
+recall = recall_score(y_test, y_pred, zero_division=0)
+f1 = f1_score(y_test, y_pred, zero_division=0)
+cm = confusion_matrix(y_test, y_pred)
 
 print("Model training completed")
 print("Accuracy:", accuracy)
+print("Precision:", precision)
+print("Recall:", recall)
+print("F1 Score:", f1)
+
+print("Confusion Matrix:")
+print(cm)
 
 # Save model and vectorizer
 joblib.dump(model, r"C:\Users\Manikandansaravanan\OneDrive\Documents\Fake-review-detector--main\model\fake_review_model.pkl")
