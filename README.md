@@ -1,97 +1,76 @@
-## Fake Review Detection using Machine Learning
-📌 Project Overview
+# Fake Review Detection Using Machine Learning
 
-Online reviews play a crucial role in influencing customer decisions. However, the presence of fake and misleading reviews reduces trust in online platforms. This project focuses on detecting fake reviews using Natural Language Processing (NLP) and Machine Learning techniques such as TF-IDF and classification algorithms.
+## 📌 Project Overview
 
-## 📅 Day 1: Problem Study & Planning
-🔍 Objective
+Fake reviews are misleading reviews that can affect customer decisions and reduce trust in online platforms.
 
-To understand the problem of fake review detection and plan the project workflow.
+This project aims to detect whether an online review is **Fake** or **Genuine** using **Natural Language Processing (NLP)** and **Machine Learning**.
 
-🛠 Activities Performed
+The project uses **TF-IDF** for text feature extraction and **Multinomial Naive Bayes** for classification.
 
-Studied the concept of fake and genuine reviews
+---
 
-Analyzed the impact of fake reviews on e-commerce platforms
+## 🎯 Objectives
 
-Defined project scope and objectives
+- Detect fake and genuine online reviews.
+- Apply Natural Language Processing techniques to review text.
+- Convert review text into numerical features using TF-IDF.
+- Train a machine learning classification model.
+- Evaluate the performance of the trained model.
+- Develop an application for predicting new reviews.
+- Maintain the complete project development process using GitHub.
 
-Selected tools and technologies:
+---
 
-Python
+## 🛠️ Technologies Used
 
-Natural Language Processing (NLP)
+- Python
+- Pandas
+- NumPy
+- NLTK
+- Scikit-learn
+- TF-IDF
+- Multinomial Naive Bayes
+- Joblib
+- GitHub
+- GitHub Desktop
 
-Machine Learning models
+---
 
-Prepared a 7-day project plan and abstract
+# 📅 7-Day Project Development
 
-✅ Outcome
+## Day 1 — Problem Study & Planning
 
-✔ Clear understanding of the problem
-✔ Project plan and abstract finalized
+### Objective
 
-## 📅 Day 2: Dataset Collection
-🔍 Objective
+To understand the problem of fake reviews and plan the development of the project.
 
-To collect and understand a labeled dataset for fake review detection.
+### Activities
 
-🛠 Activities Performed
+- Studied the concept of fake and genuine reviews.
+- Understood the importance of detecting fake reviews.
+- Identified the problem statement.
+- Defined the project objectives.
+- Prepared the project abstract.
+- Prepared the 7-day project development plan.
+- Created the GitHub repository.
+- Planned the project folder structure.
 
-Downloaded a fake review dataset from Kaggle
+### Planned Workflow
 
-Studied dataset structure and labels
-
-Prepared dataset with two columns:
-
-review_text – review content
-
-label – 0 (Genuine), 1 (Fake)
-
-Stored the dataset as reviews.csv in the data/ folder
-
-📂 Dataset Location
-data/reviews.csv
-
-✅ Outcome
-
-✔ Dataset successfully collected and organized
-✔ Ready for preprocessing
-
-## 📅 Day 3: Data Preprocessing
-🔍 Objective
-
-To clean and preprocess textual review data and convert it into numerical features.
-
-🛠 Activities Performed
-
-Loaded dataset using Pandas
-
-Cleaned review text by:
-
-Converting to lowercase
-
-Removing punctuation and special characters
-
-Removed English stopwords using NLTK
-
-Applied TF-IDF Vectorization to transform text into numerical format
-
-📚 Techniques Used
-
-Natural Language Processing (NLP)
-
-Text Cleaning
-
-Stopword Removal
-
-TF-IDF (Term Frequency–Inverse Document Frequency)
-
-📂 Files Updated
-
-train.py
-
-✅ Outcome
-
-✔ Cleaned and structured data prepared
-✔ Feature matrix ready for model training
+```text
+Problem Identification
+        ↓
+Dataset Collection
+        ↓
+Data Preprocessing
+        ↓
+Feature Extraction
+        ↓
+Model Training
+        ↓
+Model Evaluation
+        ↓
+Application Development
+        ↓
+Testing & Documentation
